@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:INUCY_application.Mains_views"
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FF0D51B2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="173*"/>
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="792" Name="Header">
+
+        </Grid>
+
     </Grid>
 </Window>

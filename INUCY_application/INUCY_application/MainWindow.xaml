@@ -5,8 +5,105 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:INUCY_application"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Login" Height="541.5" Width="800" Icon="images/logo_pers.bmp" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#FF0D51B2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="173*"/>
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="792" Name="Header" Margin="0,41,0,0" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="280*"/>
+                <ColumnDefinition Width="66*"/>
+                <ColumnDefinition Width="143*"/>
+                <ColumnDefinition Width="303*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="1" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="74" Source="C:\Users\black\Documents\GitHub\INUCY_ALPHA\INUCY_application\INUCY_application\images\logo_spec.bmp" Grid.ColumnSpan="2" Margin="16,0,0,0"/>
+            <Label Content="INUCY" Grid.Column="2" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="115" FontFamily="Roboto Medium" FontSize="36" Margin="10,10,0,0" Foreground="#FFE0DFDF"/>
+
+
+        </Grid>
+
+        <Grid Name="Main" Grid.Row="1" Margin="0,30,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="14*"/>
+                <RowDefinition Height="103*"/>
+                <RowDefinition Height="14*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="227*"/>
+                <ColumnDefinition Width="328*"/>
+                <ColumnDefinition Width="239*"/>
+            </Grid.ColumnDefinitions>
+            <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Left" Height="303" Grid.Row="1" VerticalAlignment="Top" Width="325" CornerRadius="14" Background="White">
+                <Grid Margin="9">
+                    <Label Margin="28,32,157,221" Content="Login" FontFamily="Roboto Medium" FontSize="16"></Label>
+                    <TextBox Margin="28,62,29,189" Name="LoginBox1" Text="" FontSize="24"/>
+                    <Label Margin="28,107,157,146" Content="Password" FontFamily="Roboto Medium" FontSize="16" />
+                    <PasswordBox Margin="28,137,29,114" Name="PassBox1" FontFamily="Roboto Light" FontSize="22"/>
+                    <Button Margin="93,201,92,49" Content="Login IN" FontSize="16" FontFamily="Roboto Medium" RenderTransformOrigin="0.5,0.5" Style="{DynamicResource ButtonStyle1}">
+                        <Button.Resources>
+                            <Style x:Key="FocusVisual">
+                                <Setter Property="Control.Template">
+                                    <Setter.Value>
+                                        <ControlTemplate>
+                                            <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                            <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDEDEDE"/>
+                            <SolidColorBrush x:Key="Button.Static.Border" Color="#FFE8D8D8"/>
+                            <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+                            <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+                            <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+                            <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+                            <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+                            <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+                            <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+                            <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+                                <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+                                <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+                                <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+                                <Setter Property="BorderThickness" Value="1"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                <Setter Property="Padding" Value="1"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true" CornerRadius="6">
+                                                <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsDefaulted" Value="true">
+                                                    <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                                                </Trigger>
+                                                <Trigger Property="IsMouseOver" Value="true">
+                                                    <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                                    <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                                                </Trigger>
+                                                <Trigger Property="IsPressed" Value="true">
+                                                    <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                                                    <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                                                </Trigger>
+                                                <Trigger Property="IsEnabled" Value="false">
+                                                    <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                                    <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                                    <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+            </Border>
+        </Grid>
     </Grid>
 </Window>
+
+    
