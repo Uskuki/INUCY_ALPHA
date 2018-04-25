@@ -19,7 +19,11 @@
                 <ColumnDefinition Width="303*"/>
             </Grid.ColumnDefinitions>
             <Image Grid.Column="1" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="74" Source="C:\Users\black\Documents\GitHub\INUCY_ALPHA\INUCY_application\INUCY_application\images\logo_spec.bmp" Grid.ColumnSpan="2" Margin="16,0,0,0"/>
-            <Label Content="INUCY" Grid.Column="2" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="115" FontFamily="Roboto Medium" FontSize="36" Margin="10,10,0,0" Foreground="#FFE0DFDF"/>
+            <Label Content="INUCY" Grid.Column="2" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="115" FontFamily="Roboto Medium" FontSize="36" Margin="10,10,0,0" Foreground="#FFE0DFDF">
+                <Label.Effect>
+                    <DropShadowEffect Direction="335" ShadowDepth="3" Opacity="0.5"/>
+                </Label.Effect>
+            </Label>
 
 
         </Grid>
@@ -36,12 +40,21 @@
                 <ColumnDefinition Width="239*"/>
             </Grid.ColumnDefinitions>
             <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Left" Height="303" Grid.Row="1" VerticalAlignment="Top" Width="325" CornerRadius="14" Background="White">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="1" Opacity="0.25" RenderingBias="Quality" Direction="330"/>
+                </Border.Effect>
                 <Grid Margin="9">
                     <Label Margin="28,32,157,221" Content="Login" FontFamily="Roboto Medium" FontSize="16"></Label>
-                    <TextBox Margin="28,62,29,189" Name="LoginBox1" Text="" FontSize="24"/>
+                    <Grid Margin="28,62,29,189">
+                        <TextBox Margin="0,5" x:Name="LoginBox1" Text="Login" FontFamily="Roboto Light" FontSize="16" TextDecorations="{x:Null}" BorderBrush="White"/>
+                        <Border BorderBrush="#FFA0A0A0" BorderThickness="1" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="248" CornerRadius="2"/>
+                    </Grid>
                     <Label Margin="28,107,157,146" Content="Password" FontFamily="Roboto Medium" FontSize="16" />
-                    <PasswordBox Margin="28,137,29,114" Name="PassBox1" FontFamily="Roboto Light" FontSize="22"/>
-                    <Button Margin="93,201,92,49" Content="Login IN" FontSize="16" FontFamily="Roboto Medium" RenderTransformOrigin="0.5,0.5" Style="{DynamicResource ButtonStyle1}">
+                    <Grid Margin="28,137,29,114">
+                        <PasswordBox Margin="0,7,0,5" x:Name="PassBox1" FontFamily="Roboto Light" FontSize="16" Password="Password" BorderBrush="White"/>
+                        <Border BorderBrush="#FFA0A0A0" BorderThickness="1" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="248" CornerRadius="2"/>
+                    </Grid>
+                    <Button Margin="93,201,92,49" Content="Break In" FontSize="16" FontFamily="Roboto Medium" RenderTransformOrigin="0.5,0.5" Style="{DynamicResource ButtonStyle1}">
                         <Button.Resources>
                             <Style x:Key="FocusVisual">
                                 <Setter Property="Control.Template">
@@ -100,6 +113,7 @@
                             </Style>
                         </Button.Resources>
                     </Button>
+                    <Label Content="©Uskuki" HorizontalAlignment="Left" Margin="93,247,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" FontFamily="Roboto Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" />
                 </Grid>
             </Border>
         </Grid>
