@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inucy_web", "Inucy_web\Inucy_web.csproj", "{1ACBA4A6-51AC-46DD-B83E-D340884ABD6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inucy_test_web", "Inucy_test_web\Inucy_test_web.csproj", "{65784B1D-B59F-48BF-9C70-A41FCCD4EC0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1ACBA4A6-51AC-46DD-B83E-D340884ABD6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1ACBA4A6-51AC-46DD-B83E-D340884ABD6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1ACBA4A6-51AC-46DD-B83E-D340884ABD6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1ACBA4A6-51AC-46DD-B83E-D340884ABD6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65784B1D-B59F-48BF-9C70-A41FCCD4EC0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65784B1D-B59F-48BF-9C70-A41FCCD4EC0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65784B1D-B59F-48BF-9C70-A41FCCD4EC0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65784B1D-B59F-48BF-9C70-A41FCCD4EC0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FCC8E600-6A5B-47CC-ACE5-13279EA3A967}
+		SolutionGuid = {E3868BCF-337B-4F6E-AD69-1E8587871CF1}
 	EndGlobalSection
 EndGlobal

@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Inucy_web.Models;
+using Inucy_test_web.Models;
 
-namespace Inucy_web.Controllers
+namespace Inucy_test_web.Controllers
 {
     public class HomeController : Controller
     {
@@ -14,7 +14,6 @@ namespace Inucy_web.Controllers
         {
             return View();
         }
-<<<<<<< HEAD
 
         public IActionResult About()
         {
@@ -34,7 +33,5 @@ namespace Inucy_web.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-=======
->>>>>>> Devstate_new
     }
 }

@@ -1,6 +1,6 @@
 using System;
 
-namespace Inucy_web.Models
+namespace Inucy_test_web.Models
 {
     public class ErrorViewModel
     {
