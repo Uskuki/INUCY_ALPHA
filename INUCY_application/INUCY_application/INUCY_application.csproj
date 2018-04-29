@@ -85,7 +85,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Connection\Dbcnnfrm.cs" />
     <Compile Include="Mains_views\Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
@@ -138,6 +137,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\logo_spec.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Connection\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

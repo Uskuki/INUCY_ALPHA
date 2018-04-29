@@ -24,5 +24,11 @@ namespace INUCY_application
         {
             InitializeComponent();
         }
+
+        private void LoginW_Loaded(object sender, RoutedEventArgs e)
+        {
+            LoginBox1.Text = String.Empty;
+            PassBox1.Password = String.Empty;
+        }
     }
 }

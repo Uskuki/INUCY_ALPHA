@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:INUCY_application"
         mc:Ignorable="d"
-        Title="Login" Height="541.5" Width="800" Icon="images/logo_pers.bmp" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Login" Height="541.5" Width="800" Icon="images/logo_pers.bmp" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Name="LoginW" Loaded="LoginW_Loaded">
     <Grid Background="#FF0D51B2">
         <Grid.RowDefinitions>
             <RowDefinition Height="37*"/>
