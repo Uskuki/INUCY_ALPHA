@@ -14,6 +14,7 @@ namespace Inucy_web.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
 
         public IActionResult About()
         {
@@ -33,5 +34,7 @@ namespace Inucy_web.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+=======
+>>>>>>> Devstate_new
     }
 }

@@ -6,6 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+<<<<<<< HEAD
+=======
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+>>>>>>> Devstate_new
   </ItemGroup>
 
   <ItemGroup>
