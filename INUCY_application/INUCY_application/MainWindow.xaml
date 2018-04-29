@@ -18,7 +18,7 @@
                 <ColumnDefinition Width="143*"/>
                 <ColumnDefinition Width="303*"/>
             </Grid.ColumnDefinitions>
-            <Image Grid.Column="1" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="74" Source="C:\Users\black\Documents\GitHub\INUCY_ALPHA\INUCY_application\INUCY_application\images\logo_spec.bmp" Grid.ColumnSpan="2" Margin="16,0,0,0"/>
+            <Image Grid.Column="1" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="74" Source=".\images\logo_spec.bmp" Grid.ColumnSpan="2" Margin="16,0,0,0"/>
             <Label Content="INUCY" Grid.Column="2" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="115" FontFamily="Roboto Medium" FontSize="36" Margin="10,10,0,0" Foreground="#FFE0DFDF">
                 <Label.Effect>
                     <DropShadowEffect Direction="335" ShadowDepth="3" Opacity="0.5"/>
