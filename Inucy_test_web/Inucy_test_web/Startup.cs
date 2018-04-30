@@ -22,6 +22,8 @@ namespace Inucy_test_web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddTransient<AppDb>(_ => new AppDb(Configuration["ConnectionString:DefaultConnection"]));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

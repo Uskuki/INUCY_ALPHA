@@ -1,6 +1,8 @@
 {
   "name": "myproject",
   "dependencies": {
-    "bootstrap": "bootstrap4#4.1.0"
+    "bootstrap": "bootstrap4#4.1.0",
+    "font-awesome": "Font-Awesome#v4.1.0",
+    "fontawesome": "5.0.10"
   }
 }
