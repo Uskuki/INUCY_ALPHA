@@ -27,21 +27,19 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <a asp-area="" asp-controller="Home" asp-action="Login"><button class="btn btn-secondary" style="border: #0d51b2; background-color: #0d51b2; color: black; font-size: 16px;" type="button"><img src="/lib/bootstrap/dist/fonts/account-login.svg" height="15" width="15" />Break-IN</button></a>
+                <h5 style="color: #ffffff;">You already loggined</h5>
             </form>
         </div>
     </nav>
 </header>
 
-<div class="container body-content">
-    <div class="body-content">
     @RenderBody()
-    </div>
+    
     <hr/>
     <footer>
-        <p>&copy; 2018 - Inucy_test_web</p>
+        <p align="center">&copy; 2018 - Inucy_test_web</p>
     </footer>
-</div>
+
 
 <environment include="Development">
     <script src="~/lib/jquery/dist/jquery.js"></script>

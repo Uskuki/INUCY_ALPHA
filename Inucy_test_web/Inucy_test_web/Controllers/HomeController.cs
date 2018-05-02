@@ -15,10 +15,11 @@ namespace Inucy_test_web.Controllers
             return View();
         }
 
-        public IActionResult Login()
+        public IActionResult Main()
         {
             return View();
         }
+
        
 
         public IActionResult Error()
