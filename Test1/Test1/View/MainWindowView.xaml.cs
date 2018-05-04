@@ -12,17 +12,39 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GalaSoft.MvvmLight.Helpers;
+using Test1.View;
 
-namespace Test1
+
+namespace Test1.View
 {
+    
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindowView : Window
     {
-        public MainWindow()
+        
+        
+        public MainWindowView()
         {
+            
             InitializeComponent();
+            
         }
+
+        
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TreeViewItem_Selected(object sender, RoutedEventArgs e)
+        {
+            ContentControl1.Content =  new UserControl1();
+        }
+
+        
     }
 }
