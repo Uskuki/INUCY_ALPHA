@@ -16,6 +16,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}" BorderThickness="0" WindowStartupLocation="CenterScreen" WindowState="Maximized" Icon="../Images/Logo_3_single_big_nbck.png">
     <DockPanel LastChildFill="True" Margin="0,10,2,-1">
+
         <Grid DockPanel.Dock="Top" Height="40">
 
             <materialDesign:Card VerticalAlignment="Stretch">
@@ -32,18 +33,22 @@
 
             </materialDesign:Card>
         </Grid>
+
+
         <Grid DockPanel.Dock="Left" Width="306" Margin="0,0,0,30">
-            
+            <materialDesign:Card>
             <TreeView>
                 <TreeViewItem Header="Hello">
-                    <TreeViewItem Header="Hello1"/>
-                    
-                </TreeViewItem>
+                        <TreeViewItem Header="Hello1"/>
+                    </TreeViewItem>
                 <TreeViewItem Header="Hello2" Selected="TreeViewItem_Selected">
                     <TreeViewItem Header="Hello21"/>
                 </TreeViewItem>
             </TreeView>
+            </materialDesign:Card>    
         </Grid>
+        
+       
         <Grid DockPanel.Dock="Bottom" Height="30" RenderTransformOrigin="0.5,0.5" Margin="-306,0,0,0">
             <Grid.RenderTransform>
                 <TransformGroup>
@@ -51,20 +56,15 @@
                     <SkewTransform/>
                     <RotateTransform/>
                     <TranslateTransform/>
-
                 </TransformGroup>
-
             </Grid.RenderTransform>
             <Label Content="©Uskuki" Height="30" FontFamily="Roboto Medium" VerticalAlignment="Center" Margin="0,0,826,0"/>
         </Grid>
-        <Grid DockPanel.Dock="Right">
-            <materialDesign:Card VerticalAlignment="Stretch">
-                <ContentControl Content="" Margin="10" Name="ContentControl1"/>
-                
-            </materialDesign:Card>
-        </Grid>
-
-
+        
+        <!--Main_enter data-->
+        <ContentControl Content="" Margin="10" Name="ContentControl1" />
+  
+ 
     </DockPanel>
 
 

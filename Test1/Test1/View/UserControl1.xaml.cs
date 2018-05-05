@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Test1.View;
 
 namespace Test1.View
 {
@@ -24,5 +25,24 @@ namespace Test1.View
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int top = 10;
+            int left = 10;
+
+            for (int i = 0; i < 10; i++)
+            {
+                var _button = new Button();
+                string _loc1 = "0,0,127,245";
+                _button.RenderTransform.SetCurr]
+
+
+
+            }
+        }   
+        
+        
     }
+    
 }

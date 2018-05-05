@@ -6,6 +6,15 @@
              xmlns:local="clr-namespace:Test1.View"
              mc:Ignorable="d" Height="274.795" Width="502.152">
     <Grid>
-        <Button Margin="0,0,127,243" Content="123" />
+        <Button Margin="21,59,106,184" Content="123" Click="Button_Click" RenderTransformOrigin="0.5,0.5" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="2"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
     </Grid>
 </UserControl>
